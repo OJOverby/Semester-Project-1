@@ -5,16 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Community Science Museum</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
-        <img src="images/Rocketlogo.jpg" alt="Community Science Museum logo">
-        <h2>COMMUNITY SCIENCE MUSEUM</h2>
-        <a href="">EXPLORE</a>
-        <a href="">EXOBITHION SPACES</a>
+        <img src="images/Rocketlogo.jpg" alt="Community Science Museum logo" class="main-logo">
+        <h2 class="logo-text">COMMUNITY SCIENCE MUSEUM</h2>
+        <section class="nav-links"></section>
+        <input type="checkbox" id="explore-checkbox">
+        <label for="explore-checkbox">EXPLORE</label>
+        <nav id="explore-menu">
+            <a href="">For Kids</a>
+            <a href="">For Teachers</a>
+            <a href="">For Researchers</a>
+        </nav>
+        <input type="checkbox" id="exhibition-checkbox">
+        <label for="exhibition-checkbox">EXHIBITION SPACES</label>
+        <nav id="exhibition-menu">
+            <a href="">Cosmology</a>
+            <a href="">Evolution</a>
+            <a href="">Biology and Medicine</a>
+            <a href="">Robotics and AI</a>
+            <a href="">Ecology</a>
+
+        </nav>
         <a href="">EVENTS</a>
         <a href="">VISIT</a>
+    </nav>
     </header>
     
 </body>
