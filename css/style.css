@@ -44,7 +44,7 @@ nav, #exhibition-checkbox {
 }
 
 nav {
-    position: absolute;
+    position: relative;
     background: #FFFF;
 }
 
