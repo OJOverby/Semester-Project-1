@@ -9,30 +9,36 @@
 </head>
 <body>
     <header>
-        <img src="images/Rocketlogo.jpg" alt="Community Science Museum logo" class="main-logo">
+        <a href="index.html"><img src="images/Rocketlogo.jpg" alt="Community Science Museum logo" class="main-logo"></a>
         <h2 class="logo-text">COMMUNITY SCIENCE MUSEUM</h2>
-        <section class="nav-links"></section>
-        <input type="checkbox" id="explore-checkbox">
-        <label for="explore-checkbox">EXPLORE</label>
-        <nav id="explore-menu">
-            <a href="">For Kids</a>
-            <a href="">For Teachers</a>
-            <a href="">For Researchers</a>
+        <nav class="dropdown">
+            <div class="menu-btn">
+        <a href="explore.html">EXPLORE</a></div>
+            <ul class="explore-dropdown">
+            <li><a href="explore.html#kids">For Kids</a></li>
+            <li><a href="explore.html#teachers">For Teachers</a></li>
+            <li><a href="explore.html#researchers">For Researchers</a></li>
+        </ul>
+        </div>
         </nav>
-        <input type="checkbox" id="exhibition-checkbox">
-        <label for="exhibition-checkbox">EXHIBITION SPACES</label>
-        <nav id="exhibition-menu">
-            <a href="">Cosmology</a>
-            <a href="">Evolution</a>
-            <a href="">Biology and Medicine</a>
-            <a href="">Robotics and AI</a>
-            <a href="">Ecology</a>
+        <nav class="dropdown">
+            <div class="menu-btn">
 
+        <a href="exhibition.html">EXHIBITION SPACES</a></div>
+        <ul class="exo-dropdown">
+            <li><a href="exhibition.html#cosmology">Cosmology</a></li>
+            <li><a href="exhibition.html#evolution">Evolution</a></li>
+            <li><a href="exhibition.html#bioandmed">Biology and Medicine</a></li>
+            <li><a href="exhibition.html#roboandai">Robotics and AI</a></li>
+            <li><a href="exhibition.html#ecology">Ecology</a></li>
+            </ul>
         </nav>
-        <a href="">EVENTS</a>
-        <a href="">VISIT</a>
-    </nav>
+        <nav class="dropdown"><div class="menu-btn"><a href="">EVENTS</a></div></nav>
+        <nav class="dropdown"><div class="menu-btn"><a href="">VISIT</a></div></nav>
     </header>
+    <main>
+        <img src="images/familylooking.jpeg" alt="Hero image - family looking at exhibition" class="hero-img">
+    </main>
     
 </body>
 </html>
