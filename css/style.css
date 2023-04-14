@@ -9,15 +9,15 @@ a {
     color: #000000;
 }
 
-main {
-    padding-top: 10vh;
-}
+
 
 /* HEADER*/
 
 header {
     display: flex;
+    flex-basis: 100%;
     align-items: center;
+    justify-content:flex-start;
     position: fixed;
     background-color: #FFFF;
     width: 100%;
@@ -38,7 +38,7 @@ header {
 }
 
 .menu-btn {
-    width: auto;
+    max-width: auto;
 }
 
 .menu-btn:hover {
@@ -75,9 +75,11 @@ ul li{
 }
 
 .opening-hours {
-    float: right;
+    position: absolute;
+    top: 5px;
+    right: 5px;
     width: 200px;
-    height: 30px;
+    height: 40px;
     background-color: lightgray;
     text-align: center;
 }
@@ -86,6 +88,7 @@ ul li{
     display: none;
     position: relative;
     background-color: lightgrey;
+    text-align: left;
 }
 
 .opening-hours:hover .opening-hover {
@@ -198,6 +201,10 @@ nav.dropdown {
 
 nav.mobile-menu {
     display: flex;
+}
+
+.opening-hours {
+    position: relative;
 }
 
 }
