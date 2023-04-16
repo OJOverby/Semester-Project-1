@@ -38,11 +38,17 @@ header {
 }
 
 .menu-btn {
-    max-width: auto;
+    padding: 10px 20px;
+    font-weight: 600;
 }
 
 .menu-btn:hover {
     background-color: #2F9EEE;
+    color:#FFFFFF;
+}
+
+.menu-btn:hover a{
+    color:#FFFFFF;
 }
 
 ul {
@@ -51,14 +57,17 @@ ul {
 
 .dropdown {
     position: relative;
-    padding: 10px 20px;
     background-color: #FFFFFF;
 }
+
+
+
 .explore-dropdown, .exo-dropdown {
     display: none;
     position: absolute;
     background-color: #FFFFFF;
-    padding: 5px;
+    width: max-content;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 
@@ -70,14 +79,27 @@ nav:hover .exo-dropdown {
     display: block;
 }
 
+.dropdown:hover .menu-btn  {
+    background-color: #2F9EEE;
+
+} 
+
+.dropdown li {
+    padding: 5px;
+}
+
+.dropdown li:hover {
+    background-color: #2F9EEE;
+    color: #FFFFFF;
+}
+
 ul li{
     padding-top: 5px;
 }
 
 .opening-hours {
-    position: absolute;
-    top: 5px;
-    right: 5px;
+    margin-left: auto;
+    margin-right: 10px;
     width: 200px;
     height: 40px;
     background-color: lightgray;
@@ -89,6 +111,7 @@ ul li{
     position: relative;
     background-color: lightgrey;
     text-align: left;
+    padding-top: 10px;
 }
 
 .opening-hours:hover .opening-hover {
@@ -107,18 +130,20 @@ ul li{
 
 .blue-section {
     background-color: #2F9EEE;
-    height: 90vh;
+    height: 100vh;
     color: #FFFFFF;
+    padding-top: 15vh;
 }
 
 .white-section {
     background-color: #FFFFFF;
-    height: 90vh;
+    height: 100vh;
+    padding-top: 15vh;
+
 }
 
 .wrapper {
     width: 70%;
-    padding-top: 10vh;
     margin: auto;
 }
 
@@ -189,7 +214,49 @@ nav.mobile-menu {
     float: right;
     width: 60px;
     height: 60px;
-    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.hamburger-menu {
+    content: '';
+    width: 40px;
+    height: 5px;
+    background-color:#000000;
+}
+
+.hamburger-menu::before,  .hamburger-menu::after{
+    content: '';
+    width: 40px;
+    height: 5px;
+    background-color:#000000;
+    position: absolute;
+}
+
+.hamburger-menu::before {
+    top: 17px;
+}
+
+.hamburger-menu::after {
+    bottom: 17px;
+}
+
+
+#menu-checkbox:checked ~ div.hamburger-menu::before {
+    background-color: red;
+    transform: rotateZ(44deg);
+}
+
+#menu-checkbox:checked ~ div.hamburger-menu::after {
+    background-color: red;
+}
+
+
+
+
+#menu-checkbox:checked ~ .hamburger-menu {
+    background-color: red;
 }
 
 @media (max-width: 900px) {
@@ -201,10 +268,6 @@ nav.dropdown {
 
 nav.mobile-menu {
     display: flex;
-}
-
-.opening-hours {
-    position: relative;
 }
 
 }
