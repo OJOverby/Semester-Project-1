@@ -9,33 +9,100 @@
 </head>
 <body>
     <header>
-        <img src="images/Rocketlogo.jpg" alt="Community Science Museum logo" class="main-logo">
+        <a href="index.html"><img src="images/Rocketlogo.jpg" alt="Community Science Museum logo" class="main-logo"></a>
         <h2 class="logo-text">COMMUNITY SCIENCE MUSEUM</h2>
-        <section class="nav-links"></section>
-        <input type="checkbox" id="explore-checkbox">
-        <label for="explore-checkbox">EXPLORE</label>
-        <nav id="explore-menu">
-            <a href="">For Kids</a>
-            <a href="">For Teachers</a>
-            <a href="">For Researchers</a>
+        <nav class="dropdown">
+        <div class="menu-btn">
+        <a href="explore.html">EXPLORE▾
+        </a></div>
+            <ul class="explore-dropdown">
+            <li><a href="explore.html#kids">For Kids</a></li>
+            <li><a href="explore.html#teachers">For Teachers</a></li>
+            <li><a href="explore.html#researchers">For Researchers</a></li>
+        </ul>
+   
         </nav>
-        <input type="checkbox" id="exhibition-checkbox">
-        <label for="exhibition-checkbox">EXHIBITION SPACES</label>
-        <nav id="exhibition-menu">
-            <a href="">Cosmology</a>
-            <a href="">Evolution</a>
-            <a href="">Biology and Medicine</a>
-            <a href="">Robotics and AI</a>
-            <a href="">Ecology</a>
+        <nav class="dropdown">
+
+
+            <div class="menu-btn">
+
+        <a href="exhibition.html">EXHIBITION SPACES▾</a></div>
+        <ul class="exo-dropdown">
+            <li><a href="exhibition.html#cosmology">Cosmology</a></li>
+            <li><a href="exhibition.html#evolution">Evolution</a></li>
+            <li><a href="exhibition.html#bioandmed">Biology and Medicine</a></li>
+            <li><a href="exhibition.html#roboandai">Robotics and AI</a></li>
+            <li><a href="exhibition.html#ecology">Ecology</a></li>
+            </ul>
+        </nav>
+        <nav class="dropdown"><div class="menu-btn"><a href="events.html">EVENTS</a></div></nav>
+        <nav class="dropdown"><div class="menu-btn"><a href="visit.html">VISIT</a></div></nav>
+        <div class="opening-hours"><div id="opening-hours-text"></div>
+            <div class="opening-hover">
+            <table>
+               <tr id="monday">
+                <td>Monday:</td>
+                <td>Closed</td>
+               </tr>
+               <tr id="tuesday">
+                <td>Tuesday:</td>
+                <td>10:00 - 16:00</td>
+               </tr>
+               <tr id="wednesday">
+                <td>Wednesday:</td>
+                <td>10:00 - 16:00</td>
+               </tr>
+               <tr id="thursday">
+                <td>Thursday:</td>
+                <td>10:00 - 16:00</td>
+               </tr>
+               <tr  id="friday">
+                <td>Friday:</td>
+                <td>10:00 - 19:00</td>
+               </tr>
+               <tr id="saturday">
+                <td>Saturday:</td>
+                <td>09:00 - 16:00</td>
+               </tr>
+               <tr id="sunday">
+                <td>Sunday:</td>
+                <td>09:00 - 13:00</td>
+               </tr>
+            </table>
+        </div>
+        </div>
+          <!-- Mobile menu  -->
+        <nav class="mobile-menu">
+            <input type="checkbox" id="menu-checkbox">
+            <label for="menu-checkbox"><div class="mobile-menu-button"><div class="hamburger-menu"></div></div></label>
+            <div id="mobile-dropdown-menu">
+                <ul>
+                    <input type="checkbox" id="explore-checkbox">
+                    <label for="explore-checkbox"><li>EXPLORE</li></label>
+                    <div id="mobile-explore-dropdown">
+                        <ul>
+                            <li><a href="#">For Kids</a></li>
+                            <li><a href="#">For Teachers</a></li>
+                            <li><a href="#">For Researchers</a></li>
+                        </ul>
+                    </div>
+                    <li><a href="#">EXPLORE</a></li>
+                    <li><a href="#">EXPLORE</a></li>
+
+                    <li><a href="#">EXPLORE</a></li>
+
+                </ul>
+            </div>
+            
 
         </nav>
-        <a href="">EVENTS</a>
-        <a href="">VISIT</a>
-    </nav>
+
     </header>
     <main>
         
     </main>
     
 </body>
+<script src="script/csm.js"></script>
 </html>

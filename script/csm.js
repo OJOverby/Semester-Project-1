@@ -43,13 +43,14 @@ else if (day == 0) {
 // Hamburger menu//
 
 var checkbox = document.getElementById('menu-checkbox');
-const middleLine = document.getElementsByClassName('hamburger-menu');
+const menuButton = document.querySelector('.mobile-menu-button');
 
-if (checkbox.checked==true) {
-    console.log('checked');
-    middleLine[0].style.backgroundColor = 'red';
-} else {
-    console.log('Not checked');
-}
+menuButton.addEventListener('click', () => {
+    if (checkbox.checked==0){
+        menuButton.classList.add('open');
+    } else {
+        menuButton.classList.remove('open');
+    }
+})
 
-console.log(middleLine)
+console.log(menuButton)
