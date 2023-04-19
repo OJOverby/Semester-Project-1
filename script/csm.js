@@ -1,5 +1,3 @@
-//Opening Hours//
-
 const date = new Date();
 var day = date.getDay();
 const openingHours =  document.getElementById('opening-hours-text');
@@ -11,8 +9,10 @@ const friday = document.getElementById('friday');
 const saturday = document.getElementById('saturday');
 const sunday = document.getElementById('sunday');
 
+var checkbox = document.getElementById('menu-checkbox');
+const menuButton = document.querySelector('.mobile-menu-button');
 
-console.log(day)
+//Opening Hours//
 
 if (day == 1) {
     openingHours.innerHTML = '<h3>Closed Today!</h3>';
@@ -42,9 +42,6 @@ else if (day == 0) {
 
 // Hamburger menu//
 
-var checkbox = document.getElementById('menu-checkbox');
-const menuButton = document.querySelector('.mobile-menu-button');
-
 menuButton.addEventListener('click', () => {
     if (checkbox.checked==0){
         menuButton.classList.add('open');
@@ -52,5 +49,3 @@ menuButton.addEventListener('click', () => {
         menuButton.classList.remove('open');
     }
 })
-
-console.log(menuButton)
