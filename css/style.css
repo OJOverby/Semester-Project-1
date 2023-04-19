@@ -187,7 +187,7 @@ nav.mobile-menu {
     display: none;
 }
 
-#mobile-dropdown-menu,#menu-checkbox, #explore-checkbox, #mobile-explore-dropdown {
+#mobile-dropdown-menu,#menu-checkbox, #explore-checkbox, #mobile-explore-dropdown, #exhi-checkbox, #mobile-exhi-dropdown {
     display: none;
 }
 
@@ -199,17 +199,33 @@ nav.mobile-menu {
     display: block;
 }
 
+#exhi-checkbox:checked ~ #mobile-exhi-dropdown {
+    display: block;
+}
+
+
 
 
 #mobile-dropdown-menu {
+    padding-top: 20px;
     position: absolute;
     right: 0;
     margin-top: 10vh;
     width: 100%;
     height: 90vh;
     background-color: #FFFF;
-    
+    font-weight: 600;
+    line-height: 1.5rem;
 }
+
+#mobile-dropdown-menu ul {
+    margin-left: 20px;
+}
+
+.mouse-pointer {
+    cursor: pointer;
+}
+
 
 .mobile-menu-button {
     float: right;
