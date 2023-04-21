@@ -167,11 +167,23 @@ ul li{
 
 .explore-banner h2 {
     font-size: 5vw;
+    z-index: 3;
 }
 
 @keyframes space-background {
     from {background-position: 0 0;}
     to {background-position: -2000px 0;}
+}
+
+.little-rocket {
+    width: 6rem;
+    position: absolute;
+    animation: rocketship 10s linear infinite;
+}
+
+@keyframes spaceship {
+    from {transform: 0 0;}
+    to {transform: -2000px 0;}
 }
 
 .exhibition-section {
