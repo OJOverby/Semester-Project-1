@@ -102,14 +102,16 @@ ul li{
     margin-right: 10px;
     width: 200px;
     height: 40px;
-    background-color: lightgray;
+    background-color: #2F9EEE;
+    color:#FFFFFF;
     text-align: center;
 }
 
 .opening-hover {
     display: none;
     position: relative;
-    background-color: lightgrey;
+    background-color: #2F9EEE;
+    color:#FFFFFF;
     text-align: left;
     padding-top: 10px;
 }
@@ -174,6 +176,12 @@ ul li{
     to {background-position: -2000px 0;}
 }
 
+.rocket {
+    width: 6rem;
+    height: auto;
+    position: absolute;
+}
+
 .exhibition-section {
     background-color: #000000;
     color:#FFFFFF;
@@ -210,27 +218,23 @@ ul li{
 
 /* MAIN SECTION - Explore page */
 
-
-
-/*
-
-nav, #explore-checkbox {
-    display: none;
+.explore-page-hero {
+    width: 100%;
+    height: auto;
 }
 
-#explore-checkbox:checked ~ #explore-menu {
-    display: block;
+.explore-wrapper {
+    width: 70%;
+    background-color: #000000;
+    color: #FFFFFF;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 2rem;
 }
 
-nav, #exhibition-checkbox {
-    display: none;
+.explore-page-banner {
+    width: 100%;
 }
-
-#exhibition-checkbox:checked ~ #exhibition-menu {
-    display: block;
-}
-
-*/
 
 /* Mobile version */
 
