@@ -9,6 +9,10 @@ a {
     color: #000000;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 
 
 /* HEADER*/
@@ -165,6 +169,7 @@ ul li{
     justify-content: center;
     align-items: center;
     animation: space-background 65s linear infinite;
+    overflow-x: hidden;
 }
 
 .explore-banner h2 {
@@ -180,12 +185,12 @@ ul li{
 .little-rocket {
     width: 6rem;
     position: absolute;
-    animation: rocketship 10s linear infinite;
+    animation: spaceship 10s linear infinite;
 }
 
 @keyframes spaceship {
-    from {transform: 0 0;}
-    to {transform: -2000px 0;}
+    from {left: 0;}
+    to {left: 100%;}
 }
 
 .exhibition-section {
