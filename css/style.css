@@ -24,7 +24,7 @@ header {
     justify-content:flex-start;
     position: fixed;
     background-color: #FFFF;
-    width: 100%;
+    width: 100vw;
     height: 10vh;
     
 }
