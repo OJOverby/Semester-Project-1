@@ -50,7 +50,7 @@ menuButton.addEventListener('click', () => {
     }
 })
 
-/* Animation change
+ //Animation change
 
 var spaceship = document.querySelector(".little-rocket");
 var  randomNumber = Math.floor((Math.random()*3) + 1 );
@@ -58,29 +58,20 @@ var  randomNumber = Math.floor((Math.random()*3) + 1 );
 function newNumber () {
     randomNumber = Math.floor((Math.random()*3) + 1 );
     console.log(randomNumber);
-    changeAnimation;
+    changeAnimation();
 }
 
 function changeAnimation () {
     if (randomNumber == 1) {
-        spaceship.style.animation = "spaceship 2s linear infinite";
+        spaceship.style.animation = "spaceship 10s linear infinite";
         console.log(randomNumber);
     } else if (randomNumber == 2) {
-        spaceship.style.animation = "spaceship2 2s linear infinite";
+        spaceship.style.animation = "spaceship2 10s linear infinite";
         console.log(randomNumber);
     } else if (randomNumber == 3) {
-        spaceship.style.animation = "spaceship3 2s linear infinite";
+        spaceship.style.animation = "spaceship3 10s linear infinite";
         console.log(randomNumber);
     }
 }
 
-
-
-function testing () {
-    console.log(spaceship.style.animation);
-}
-
-setInterval(newNumber, 3000);
-
-console.log(spaceship)
-*/
+setInterval(newNumber, 10000);

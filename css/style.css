@@ -227,7 +227,7 @@ ul li{
     align-content: space-between;
 }
 
-.exhibition-card-container::-webkit-scrollbar {
+.exhibition-card-container::-webkit-scrollbar, .explore-section::-webkit-scrollbar {
     height: 1rem;
 }
 
@@ -238,14 +238,26 @@ ul li{
 
 }
 
-.exhibition-card-container::-webkit-scrollbar-thumb {
+.explore-section::-webkit-scrollbar-track {
     background-color: #FFFFFF;
+    border: #000000 solid 2px;
+    border-radius: 100vw;
+
+}
+
+.exhibition-card-container::-webkit-scrollbar-thumb{
+    background-color: #FFFFFF;
+    border-radius: 100vw;
+}
+
+.explore-section::-webkit-scrollbar-thumb {
+    background-color: #000000;
     border-radius: 100vw;
 }
 
 .exhibition-card {
     max-width: 15rem;
-    margin: 1rem auto;
+    margin: 1rem 1rem;
     display: flex;
     flex-direction: column;
     align-content: center;
@@ -297,8 +309,8 @@ ul li{
     height: 15rem;
     width: 15rem;
     background-size: cover;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
@@ -469,6 +481,20 @@ footer {
     margin-left: 2rem;
     width: 20%;
     padding: 1rem;
+}
+
+.centered {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.events-image {
+    width: 70%;
+    height: auto;
+}
+
+.events-page .info-text-wrapper {
+    margin-top: 3rem;
 }
 
 /* Mobile version */
