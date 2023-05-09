@@ -30,6 +30,10 @@ header {
     
 }
 
+header h2 {
+    margin-right: auto;
+}
+
 
 .main-logo {
     max-width: 50px;
@@ -111,6 +115,7 @@ ul li{
     background-color: #2F9EEE;
     color:#FFFFFF;
     text-align: center;
+    align-items: center;
 }
 
 .opening-hover {
@@ -149,6 +154,10 @@ ul li{
     margin-right: auto;
     margin-bottom: 2rem;
     padding: 0.5rem;
+}
+
+.info-area a {
+    color: #FFFFFF;
 }
 
 .exhibition-card-container .exhibition-card .learn-more-button {
@@ -502,6 +511,18 @@ footer {
 
 .events-page .info-text-wrapper {
     margin-top: 3rem;
+}
+
+.location-text {
+    width: 50%;
+}
+
+.map-container {
+    width: 50%;
+}
+
+.flexed {
+    display: flex;
 }
 
 /* Mobile version */
