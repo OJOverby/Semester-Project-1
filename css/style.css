@@ -551,21 +551,43 @@ nav.mobile-menu {
 
 
 #mobile-dropdown-menu {
-    padding-top: 15vh;
-    margin-top: 10vh;
+    padding-top: 5vh;
+    margin-top: 15vh;
     position: absolute;
     right: 0;
+    left: 0;
     top: 0;
-    width: 100%;
-    height: 90vh;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    height: 80vh;
     background-color: #FFFF;
     font-weight: 600;
-    line-height: 1.5rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
     z-index: 4;
+    animation: slidedown 0.3s ease-in-out;
+    transform-origin: top center;
+}
+
+@keyframes slidedown {
+    0% {
+        transform: scaleY(0);
+    }
+
+    100% {
+        transform: scaleY(1);
+    }
 }
 
 #mobile-dropdown-menu ul {
     margin-left: 20px;
+}
+
+.mobile-menu-container {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .mouse-pointer {
