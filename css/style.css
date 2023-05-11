@@ -452,6 +452,16 @@ footer {
     flex-direction: column;
 }
 
+.visit-hero {
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    background-image: url(/images/visitbanner.jpg);
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+}
+
 .events-hero {
     width: 100%;
     height: 40vh;
