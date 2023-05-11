@@ -657,5 +657,13 @@ nav.mobile-menu {
     width: 100%;
 }
 
+.flexed {
+    flex-direction: column;
+}
+
+.map-container {
+    width: 100%;
+}
+
 }
 
