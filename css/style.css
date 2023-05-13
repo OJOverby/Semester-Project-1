@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
 
 a {
@@ -49,12 +49,12 @@ header {
     font-weight: 600;
 }
 
-.menu-btn:hover {
+.menu-btn:hover, .menu-btn:focus {
     background-color: #2F9EEE;
     color:#FFFFFF;
 }
 
-.menu-btn:hover a{
+.menu-btn:hover a, .menu-btn    :focus a{
     color:#FFFFFF;
 }
 
@@ -86,7 +86,7 @@ nav:hover .exo-dropdown {
     display: block;
 }
 
-.dropdown:hover .menu-btn, .dropdown:hover .menu-btn a  {
+.dropdown:hover .menu-btn, .dropdown:hover .menu-btn a, .dropdown a:focus .menu-btn, .dropdown a:hover .menu-btn a  {
     background-color: #2F9EEE;
     color: #FFFFFF;
 } 
@@ -95,9 +95,9 @@ nav:hover .exo-dropdown {
     padding: 5px;
 }
 
-.dropdown li:hover {
+.dropdown li:hover, .dropdown a:focus li {
     background-color: #2F9EEE;
-    color: #FFFFFF;
+    color: #FFFFFF;         
 }
 
 ul li{
@@ -157,15 +157,14 @@ ul li{
     color: #FFFFFF;
 }
 
-.exhibition-card-container .exhibition-card .learn-more-button {
+
+
+.learn-more-button {
+    font-weight: 600;
     width: 7rem;
     background-color: #FFFFFF;
     color:#000000;
     padding: 0.5rem;
-}
-
-.learn-more-button {
-    font-weight: 600;
 }
 
 .explore-banner {
@@ -197,7 +196,7 @@ ul li{
 .little-rocket {
     width: 6rem;
     position: absolute;
-    animation: spaceship 10s linear infinite;
+    animation: spaceship 6s linear infinite;
     z-index: 2;
 }
 
@@ -273,6 +272,8 @@ ul li{
     flex-direction: column;
     align-content: center;
     color:#FFFFFF;
+    align-items: center;
+    text-align: center;
 }
 
 .exhibition-card:hover, .explore-link-card:hover {
@@ -349,8 +350,8 @@ ul li{
 .explore-link-button {
     background-color: rgba(47, 158, 238, 0.6);
     width: 100%;
-    height: 3rem;
-    padding-top: 0.7rem;
+    height: 3.5rem;
+    padding-top: 0.5rem;
     text-align: center;
     color:#FFFFFF;
 }
@@ -368,11 +369,8 @@ footer {
 }
 
 
-/* MAIN SECTION - Explore page */
+/* MAIN SECTION - Explore, Exhibitions, Events and Visit pages */
 
-.hero {
-    display: flex;
-}
 
 .explore-page-hero {
     width: 70%;
@@ -422,44 +420,29 @@ footer {
     margin-top: 0.5rem;
 }
 
-.exhibition-hero {
+.hero {
     width: 100%;
     height: 40vh;
     background-size: cover;
-    background-image: url(/images/exhibitionbanner.jpg);
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
+}
+
+.exhibition-hero {
+    background-image: url(/images/exhibitionbanner.jpg);
 }
 
 .explore-hero {
-    width: 100%;
-    height: 40vh;
-    background-size: cover;
     background-image: url(/images/explorebanner.jpg);
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
 }
 
 .visit-hero {
-    width: 100%;
-    height: 40vh;
-    background-size: cover;
     background-image: url(/images/visitbanner.jpg);
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
 }
 
 .events-hero {
-    width: 100%;
-    height: 40vh;
-    background-size: cover;
     background-image: url(/images/eventbanner.jpg);
-    display: flex;
-    justify-content: flex-end;
-    flex-direction: column;
 }
 
 .blue-line {
@@ -513,11 +496,7 @@ footer {
     margin-top: 3rem;
 }
 
-.location-text {
-    width: 50%;
-}
-
-.map-container {
+.location-text, .map-container {
     width: 50%;
 }
 

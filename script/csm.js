@@ -12,6 +12,9 @@ const sunday = document.getElementById('sunday');
 var checkbox = document.getElementById('menu-checkbox');
 const menuButton = document.querySelector('.mobile-menu-button');
 
+var spaceship = document.querySelector(".little-rocket");
+var  randomNumber = Math.floor((Math.random()*3) + 1 );
+
 //Opening Hours//
 
 if (day == 1) {
@@ -52,26 +55,20 @@ menuButton.addEventListener('click', () => {
 
  //Animation change
 
-var spaceship = document.querySelector(".little-rocket");
-var  randomNumber = Math.floor((Math.random()*3) + 1 );
 
 function newNumber () {
     randomNumber = Math.floor((Math.random()*3) + 1 );
-    console.log(randomNumber);
     changeAnimation();
 }
 
 function changeAnimation () {
     if (randomNumber == 1) {
-        spaceship.style.animation = "spaceship 10s linear infinite";
-        console.log(randomNumber);
+        spaceship.style.animation = "spaceship 6s linear infinite";
     } else if (randomNumber == 2) {
-        spaceship.style.animation = "spaceship2 10s linear infinite";
-        console.log(randomNumber);
+        spaceship.style.animation = "spaceship2 6s linear infinite";
     } else if (randomNumber == 3) {
-        spaceship.style.animation = "spaceship3 10s linear infinite";
-        console.log(randomNumber);
+        spaceship.style.animation = "spaceship3 6s linear infinite";
     }
 }
 
-setInterval(newNumber, 10000);
+setInterval(newNumber, 6000);
