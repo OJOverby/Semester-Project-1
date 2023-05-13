@@ -276,7 +276,7 @@ ul li{
     text-align: center;
 }
 
-.exhibition-card:hover, .explore-link-card:hover {
+.exhibition-card:hover, .explore-link-card:hover, a:focus .exhibition-card, a:focus .explore-link-card {
     scale: 1.2;
 }
 
@@ -300,8 +300,6 @@ ul li{
     display: flex;
     justify-content: flex-end;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .explore-section {
@@ -372,12 +370,6 @@ footer {
 /* MAIN SECTION - Explore, Exhibitions, Events and Visit pages */
 
 
-.explore-page-hero {
-    width: 70%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-}
 
 .container {
     width: 50%;
@@ -396,8 +388,6 @@ footer {
     padding-bottom: 2rem;
     margin-bottom: 2rem;
     width: 90%;
-    margin-left: auto;
-    margin-right: auto;
     overflow: auto;
 }
 
@@ -453,8 +443,6 @@ footer {
 }
 
 .image-wrapper {
-    margin-left: auto;
-    margin-right: auto;
     font-size: 1rem;
 
 }
