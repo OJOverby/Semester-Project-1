@@ -13,8 +13,6 @@ body {
     overflow-x: hidden;
 }
 
-
-
 /* HEADER*/
 
 header {
@@ -29,8 +27,6 @@ header {
     z-index: 999;
     
 }
-
-
 
 .main-logo {
     max-width: 50px;
@@ -67,8 +63,6 @@ ul {
     background-color: #FFFFFF;
 }
 
-
-
 .explore-dropdown, .exo-dropdown {
     display: none;
     position: absolute;
@@ -76,7 +70,6 @@ ul {
     width: max-content;
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
-
 
 nav:hover .explore-dropdown {
     display: block;
@@ -156,8 +149,6 @@ ul li{
 .info-area a {
     color: #FFFFFF;
 }
-
-
 
 .learn-more-button {
     font-weight: 600;
@@ -245,14 +236,12 @@ ul li{
     background-color: #000000;
     border: #FFFFFF solid 2px;
     border-radius: 100vw;
-
 }
 
 .explore-section::-webkit-scrollbar-track {
     background-color: #FFFFFF;
     border: #000000 solid 2px;
     border-radius: 100vw;
-
 }
 
 .exhibition-card-container::-webkit-scrollbar-thumb, .section-image-wrapper::-webkit-scrollbar-thumb{
@@ -343,8 +332,6 @@ ul li{
     background-image: url(/images/researchers.jpg);
 }
 
-
-
 .explore-link-button {
     background-color: rgba(47, 158, 238, 0.6);
     width: 100%;
@@ -368,7 +355,6 @@ footer {
 
 
 /* MAIN SECTION - Explore, Exhibitions, Events and Visit pages */
-
 
 
 .container {
@@ -399,8 +385,6 @@ footer {
     margin-right: 1rem;
     transition: transform 0.2s;
 }
-
-
 
 .section-banner {
     width: 100%;
@@ -446,8 +430,6 @@ footer {
     font-size: 1rem;
 
 }
-
-
 
 .text-wrapper {
     display: flex;
@@ -514,9 +496,6 @@ nav.mobile-menu {
     display: block;
 }
 
-
-
-
 #mobile-dropdown-menu {
     padding-top: 5vh;
     margin-top: 15vh;
@@ -552,11 +531,9 @@ nav.mobile-menu {
     margin-left: 20px;
 }
 
-
 .mouse-pointer {
     cursor: pointer;
 }
-
 
 .mobile-menu-button {
     float: right;
@@ -595,7 +572,6 @@ nav.mobile-menu {
     bottom: 16px;
 }
 
-
 .mobile-menu-button.open .hamburger-menu::before {
     transform: rotate(45deg) translate(5px, 10px);
 }
@@ -611,7 +587,6 @@ nav.mobile-menu {
 
 @media (max-width: 900px) {
 
-
 nav.dropdown {
     display: none;
 }
@@ -620,7 +595,7 @@ nav.mobile-menu {
     display: flex;
 }
 
-.container {
+.container, .map-container {
     width: 100%;
 }
 
@@ -628,9 +603,4 @@ nav.mobile-menu {
     flex-direction: column;
 }
 
-.map-container {
-    width: 100%;
 }
-
-}
-
