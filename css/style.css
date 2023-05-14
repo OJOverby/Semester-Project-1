@@ -299,9 +299,11 @@ ul li{
     text-align: center;
 }
 
-.exhibition-card:hover, .explore-link-card:hover, a:focus .exhibition-card, a:focus .explore-link-card {
+.exhibition-card:hover, .explore-link-card:hover, a:focus .exhibition-card, a:focus .explore-link-card,.event-hero .info-area:hover, .visit-section .info-area:hover, .event-hero .info-area:has(a:focus), .visit-section .info-area:has(a:focus) {
     scale: 1.2;
 }
+
+
 
 .exhibition-card-image {
     width: 15rem;
