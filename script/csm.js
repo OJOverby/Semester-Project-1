@@ -13,7 +13,7 @@ var checkbox = document.getElementById('menu-checkbox');
 const menuButton = document.querySelector('.mobile-menu-button');
 
 var spaceship = document.querySelector(".little-rocket");
-var  randomNumber = Math.floor((Math.random()*3) + 1 );
+var  randomNumber = Math.floor((Math.random()*7) + 1 );
 
 //Opening Hours//
 
@@ -57,18 +57,34 @@ menuButton.addEventListener('click', () => {
 
 
 function newNumber () {
-    randomNumber = Math.floor((Math.random()*3) + 1 );
+    randomNumber = Math.floor((Math.random()*7) + 1 );
     changeAnimation();
 }
 
 function changeAnimation () {
     if (randomNumber == 1) {
+        spaceship.src="/images/rocket.png";
         spaceship.style.animation = "spaceship 6s linear infinite";
     } else if (randomNumber == 2) {
+        spaceship.src="/images/rocket.png";
         spaceship.style.animation = "spaceship2 6s linear infinite";
     } else if (randomNumber == 3) {
+        spaceship.src="/images/rocket.png";
         spaceship.style.animation = "spaceship3 6s linear infinite";
+    } else if (randomNumber == 4) {
+        spaceship.src="/images/comet.png";
+        spaceship.style.animation = "comet 6s linear infinite";
+    } else if (randomNumber == 5) {
+        spaceship.src="/images/comet.png";
+        spaceship.style.animation = "comet2 6s linear infinite";
+    } else if (randomNumber == 6) {
+        spaceship.src="/images/ufo.png";
+        spaceship.style.animation = "ufo 6s linear infinite";
+    } else if (randomNumber == 7) {
+        spaceship.src="/images/ufo.png";
+        spaceship.style.animation = "ufo2 6s linear infinite";
     }
+    
 }
 
 setInterval(newNumber, 6000);

@@ -156,6 +156,7 @@ ul li{
     background-color: #FFFFFF;
     color:#000000;
     padding: 0.5rem;
+    text-align: center;
 }
 
 .explore-banner {
@@ -210,6 +211,39 @@ ul li{
     to {transform: rotate(720deg);
         left: 0;}
 }
+
+@keyframes comet {
+    from {transform: rotate(0deg);
+        left: 100%;;
+        }
+    to {transform: rotate(720deg);
+        left: 0;}
+}
+
+@keyframes comet2 {
+    from {transform: rotate(0deg);
+        left: 0;;
+        }
+    to {transform: rotate(720deg);
+        left: 100%;}
+}
+
+@keyframes ufo {
+    0% {left: 100%;
+        scale: 0.1}
+    50% { scale: 1.6}
+    100% {left: 0;
+        scale: 0.1}
+}
+
+@keyframes ufo2 {
+    0% {left: 0;
+        scale: 0.1}
+    50% { scale: 1.6}
+    100% {left: 100%;
+        scale: 0.1}
+}
+
 
 .exhibition-section {
     background-color: #000000;
@@ -290,6 +324,7 @@ ul li{
     justify-content: flex-end;
     flex-direction: column;
 }
+
 
 .explore-section {
     display: flex;
