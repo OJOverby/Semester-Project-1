@@ -146,6 +146,10 @@ ul li{
     padding: 0.5rem;
 }
 
+.info-area h1 {
+    font-size: 3rem;
+}
+
 .info-area a {
     color: #FFFFFF;
 }
@@ -303,8 +307,6 @@ ul li{
     scale: 1.2;
 }
 
-
-
 .exhibition-card-image {
     width: 15rem;
     height: 18rem;
@@ -320,6 +322,7 @@ ul li{
 .visit-section {
     background-image: url(/images/FamilyHero.jpg);
     background-size: cover;
+    background-position: center;
     width: 60%;
     height: 50vh;
     display: flex;
@@ -632,12 +635,16 @@ nav.mobile-menu {
     display: flex;
 }
 
-.container, .map-container {
+.container, .map-container, .visit-section {
     width: 100%;
 }
 
 .flexed {
     flex-direction: column;
+}
+
+.info-area h1 {
+    font-size: 2rem;
 }
 
 }
