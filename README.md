@@ -1,5 +1,5 @@
 # Community Science Museum - Semester project
-![image](https://user-images.githubusercontent.com/52622303/164316813-4b12d99f-aeb7-4069-85cf-e72b3a50ac99.png)
+![image](https://olejorgen.no/images/CSM/dulcet-bavarois-79dbb9.netlify.app_.png)
 
 End of semester project for our first semester at Noroff. It is a website for a science museum.
 
