@@ -22,7 +22,7 @@ With this brief in mind this site was designed with a bright color palette consi
 1. Clone the repo:
 
 ```bash
-git clone https://github.com/OJOverby/Semester-Project-1.git
+git clone git@github.com:OJOverby/Semester-Project-1.git
 ```
 
 
