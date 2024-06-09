@@ -28,6 +28,6 @@ git clone https://github.com/OJOverby/Semester-Project-1.git
 
 ## Contact
 
-[Email](mail@olejorgen.no)
+[Email](mailto:mail@olejorgen.no)
 
 
